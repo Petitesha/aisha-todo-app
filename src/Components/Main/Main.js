@@ -1,13 +1,14 @@
 import classes from '../Main/Main.module.css';
+import Header from '../Header/Header';
+import Card from '../Card/Card';
 
 
 
 function Main() {
     return (
       <div className={classes.main}>
-       <div className={classes.innerMain}>
-        <p>This is the main page</p>
-       </div>
+       <Header />
+       <Card />
       </div>
     );
   }

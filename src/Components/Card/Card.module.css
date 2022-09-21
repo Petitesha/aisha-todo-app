@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.cardContainer{
+    width: 250px;
+    padding: 20px 0px;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px solid grey;
+    border-top: 5px solid red;
+}
+.innerCard{
+    width: 80%;
+    margin: 0 auto;
+}
+.editDelete{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.edit{
+    margin-right: 20px;
+}
