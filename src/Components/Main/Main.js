@@ -1,14 +1,17 @@
-import classes from '../Main/Main.module.css';
+import React, { useState } from 'react';
 import Header from '../Header/Header';
-import Card from '../Card/Card';
+import Modal from '../Modal/Modal';
 
 
 
 function Main() {
+  const [showModal, setShowModal] = useState(false);
+
+ 
     return (
-      <div className={classes.main}>
-       <Header />
-       <Card />
+      <div>
+       <Header handleClick = {() => setShowModal(true)}/>
+       {showModal && <Modal show={setShowModal} onClose={() => setShowModal(false) }/>}
       </div>
     );
   }
